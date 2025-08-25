@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - TechNova Solutions</title>
+  <style>
+    /* ===== Company Style Guide ===== */
+    :root {
+      --primary-color: #004aad;   /* HEX */
+      --secondary-color: rgb(255, 165, 0); /* RGB */
+      --accent-color: rgba(220, 20, 60, 0.9); /* RGBA */
+      --highlight-color: hsl(145, 70%, 30%); /* HSL */
+      --bg-gradient: linear-gradient(135deg, #e0f7fa, #f1f8e9); /* gradient */
+    }
+
+    /* Element Selector */
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-gradient);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      color: var(--primary-color);
+      text-align: center;
+      padding: 20px 0;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      margin: 0;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      color: var(--secondary-color);
+      margin-top: 30px;
+      text-decoration: underline;
+    }
+
+    /* Class Selector */
+    .highlight {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-style: italic;
+    }
+
+    /* ID Selector */
+    #company-mission {
+      color: var(--highlight-color);
+      font-weight: bold;
+      font-size: 1.2rem;
+      background: white;
+      padding: 12px;
+      border-left: 5px solid var(--highlight-color);
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+
+    /* Attribute Selector */
+    a[target="_blank"] {
+      color: var(--secondary-color);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Pseudo-class Selector */
+    a:hover {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+
+    /* Pseudo-element Selector */
+    p::first-line {
+      font-weight: bold;
+      color: #222;
+    }
+
+    /* About Section Box */
+    .about-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ===== Unordered List (Movies) ===== */
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin: 6px 0;
+      font-family: "Verdana", sans-serif;
+    }
+
+    /* Favorite movie styled uniquely */
+    .favorite {
+      color: white;
+      background-color: var(--primary-color);
+      font-weight: bold;
+      border-radius: 6px;
+      padding: 4px 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    /* ===== Ordered List (Cities) ===== */
+    ol {
+      list-style-type: upper-alpha;
+      background: rgba(0, 128, 255, 0.08);
+      padding: 15px;
+      border: 2px dashed var(--highlight-color);
+      border-radius: 10px;
+    }
+
+    ol li {
+      margin: 5px 0;
+      transition: transform 0.3s, color 0.3s;
+      font-family: "Courier New", monospace;
+    }
+
+    ol li:hover {
+      transform: scale(1.1);
+      color: var(--accent-color);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>About TechNova Solutions</h1>
+
+  <div class="about-container">
+    <p>
+      Welcome to <span class="highlight">TechNova Solutions</span>, 
+      where we merge creativity, technology, and vision to shape the digital future. 
+      We are passionate about building solutions that make life simpler and smarter.
+    </p>
+    <p id="company-mission">
+      Our mission is to deliver innovative digital solutions that empower individuals and businesses to grow globally.
+    </p>
+    <p>
+      Discover more on our 
+      <a href="https://example.com" target="_blank">official website</a>.
+    </p>
+  </div>
+
+  <div class="about-container">
+    <h2>Our Favorite Movies</h2>
+    <ul>
+      <li>Conjuring</li>
+      <li>Hell Bound</li>
+      <li class="favorite">The Matrix</li>
+      <li>DDLJ</li>
+    </ul>
+
+    <h2>Cities We Love</h2>
+    <ol>
+      <li>Los Angeles</li>
+      <li>Seoul</li>
+      <li>Paris</li>
+      <li>Amsterdam</li>
+    </ol>
+  </div>
+
+</body>
+</html>
