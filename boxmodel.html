@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store & Blog - Modern UI</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #f9fafc;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 15px;
+      color: #222;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      background: #2c3e50;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .header h2 {
+      font-size: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #1abc9c;
+    }
+
+    /* Products */
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-content h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1abc9c;
+    }
+
+    .rating {
+      color: #f1c40f;
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    .product-card button {
+      margin-top: 10px;
+      padding: 10px 18px;
+      background: linear-gradient(45deg, #3498db, #2ecc71);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .product-card button:hover {
+      background: linear-gradient(45deg, #2ecc71, #3498db);
+    }
+
+    /* Blog */
+    .blog-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .blog-post {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-6px);
+    }
+
+    .blog-post img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .blog-content {
+      padding: 15px;
+    }
+
+    .blog-meta {
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    .blog-post h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .blog-post p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .blog-post a {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #1abc9c;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    .blog-post a:hover {
+      background: #16a085;
+    }
+
+    /* Contact */
+    .contact {
+      background: #fff;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    }
+
+    /* Responsive Nav */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h2>Store & Blog</h2>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content" style="padding: 30px;">
+
+    <!-- Home -->
+    <section id="home">
+      <h1>Welcome to Our Modern Store & Blog</h1>
+      <p>Discover exclusive products and read trending blogs.</p>
+    </section>
+
+    <!-- Products -->
+    <section id="products">
+      <h2>Featured Products</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x180" alt="Product 1">
+          <div class="product-content">
+            <h3>Wireless Earbuds</h3>
+            <p class="price">₹2,499</p>
+            <p class="rating">⭐⭐⭐⭐☆</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x180" alt="Product 2">
+          <div class="product-content">
+            <h3>Smart Watch</h3>
+            <p class="price">₹4,999</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x180" alt="Product 3">
+          <div class="product-content">
+            <h3>Gaming Mouse</h3>
+            <p class="price">₹1,299</p>
+            <p class="rating">⭐⭐⭐☆☆</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+      <h2>Latest Blog Posts</h2>
+      <div class="blog-list">
+        <div class="blog-post">
+          <img src="https://via.placeholder.com/300x160" alt="Blog 1">
+          <div class="blog-content">
+            <p class="blog-meta">By Admin | Aug 2025</p>
+            <h3>Top 5 Tech Gadgets</h3>
+            <p>Check out the coolest gadgets trending in 2025...</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="blog-post">
+          <img src="https://via.placeholder.com/300x160" alt="Blog 2">
+          <div class="blog-content">
+            <p class="blog-meta">By Sarah | Aug 2025</p>
+            <h3>Why Smart Homes?</h3>
+            <p>Smart homes are becoming a necessity in modern living...</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="blog-post">
+          <img src="https://via.placeholder.com/300x160" alt="Blog 3">
+          <div class="blog-content">
+            <p class="blog-meta">By John | Aug 2025</p>
+            <h3>Responsive Design 101</h3>
+            <p>Learn why mobile-first design is essential...</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact">
+        <p><b>Email:</b> hello@storeblog.com</p>
+        <p><b>Phone:</b> +91 98765 43210</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
